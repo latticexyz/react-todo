@@ -43,11 +43,10 @@ export async function getNetworkConfig(): Promise<NetworkConfig> {
     },
     privateKey: getBurnerWallet().value,
     chainId,
-    modeUrl: params.get("mode") ?? chain.modeUrl,
     faucetServiceUrl: params.get("faucet") ?? chain.faucetUrl,
     worldAddress,
     initialBlockNumber,
     snapSync: params.get("snapSync") === "true",
-    disableCache: params.get("cache") === "false",
+    disableCache: params.get("cache") === "false" ?? true,
   };
 }
