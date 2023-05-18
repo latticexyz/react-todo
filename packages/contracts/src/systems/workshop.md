@@ -1,0 +1,13 @@
+- add ToDo table
+- run tablegen
+- add unique entity module
+- write addToDo func
+- run worldgen
+- run dev, open up project
+- create client system call
+- add system call to todo form
+- explain dev tools
+- link up todo list view
+- add "toggleDone" system call
+- client side system call toggleDone
+- hook up toggle done to check mark
