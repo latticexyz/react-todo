@@ -47,6 +47,7 @@ export async function getNetworkConfig(): Promise<NetworkConfig> {
     worldAddress,
     initialBlockNumber,
     snapSync: params.get("snapSync") === "true",
-    disableCache: params.get("cache") === "false" ?? true,
+    disableCache: true,
+    modeUrl: params.get("mode") ?? chain.modeUrl
   };
 }
